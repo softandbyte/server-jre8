@@ -5,7 +5,7 @@ ENV JRE_FOLDER jdk1.8.0_65
 ENV JRE_CHECKSUM cfd3c775a106381e82386fbd87e31efd
 ENV JAVA_HOME /usr/java/latest
 
-# Download and install the required version of Oracle's server JRE
+# Download and install the required version of Oracle's server JRE 
 RUN set -x \
 	&& yum install -y wget \
 	&& wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/$JRE_VERSION-b17/server-jre-$JRE_VERSION-linux-x64.tar.gz" \
