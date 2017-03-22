@@ -20,5 +20,6 @@ RUN set -x \
 	&& ln -s /usr/java/$JRE_FOLDER $JAVA_HOME \
 	&& update-alternatives --install /usr/bin/java java $JAVA_HOME/bin/java 999999
 
+
 # If running this image directly, we most likely want bash
 CMD ["/bin/bash", "--login"]
